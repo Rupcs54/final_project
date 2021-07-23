@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script src="../Scripts/ajaxCalls.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../Scripts/navbarFunc.js"></script>
+    <link href="navbarStyle.css" rel="stylesheet" />
+    <link href="forumStyle.css" rel="stylesheet" />
+    <script src="../Scripts/forum.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> The Movie H & H</a>
+            </div>
+            <ul class="nav navbar-nav justify-content-between">
+                <li><div id="profile"></div></li>
+                <li><div id="userName"></div></li>
+                <li><a class="toblack" href="homePage.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a class="toblack" href="insert_signup.html"><span class="glyphicon glyphicon-search"></span> Search TvShow</a></li>
+                <li><a class="toblack" href="movie.html"><span class="glyphicon glyphicon-search"></span> Search Movie</a></li>
+                <li><a class="toblack" id="view" href="view.html"><span class="glyphicon glyphicon-heart-empty"></span> View</a></li><!--"glyphicon glyphicon-eye-open"-->
+                <li><a class="toblack" id="admin" href="admin.html"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a onclick="signUpClick()" id="signUp" class="toblack"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a id="login" href="login.html" class="toblack"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                <li><a href="editUser.html" id="editUser" class="toblack"><span class="glyphicon glyphicon-pencil"></span>  Edit Profile</a></li>
+                <li><a onclick="exitFunc()" id="exit" class="toblack"><span class="glyphicon glyphicon-log-in"></span>  Exit</a></li>
+            </ul>
+        </div>
+    </nav>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container">
+        <div id="forumTitle"></div>
+        <div id="forum" class="be-comment-block">
+            <div class="loader"></div>
+        </div>
+        <div class="row">
+            <div id="sendMsgRow">
+                <textarea id="contentText" class="form-input" required="" placeholder="Your text"></textarea>
+                <button id="submit" class="btn btn-primary pull-right"><i class="fa fa-send-o" style="font-size:36px"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,532 @@
+﻿div {
+    margin: 0;
+    padding: 0;
+}
+
+#ph > img {
+    margin-top: 20px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+
+#ph {
+    text-align:center;
+}
+#actors {
+    display: inline-block;
+}
+
+#phView {
+    margin: 0 auto;
+}
+#getTV {
+    font-size: 20px;
+    height: 40px;
+    top: 76px;
+    border-radius: 10px;
+    float: right;
+    justify-content: center;
+    background-color: #e6ebff;
+    color: black;
+    border: 2px solid black;
+    position: absolute;
+}
+
+#getTV:hover {
+    background-color: #1e212d;
+    color: white;
+    border: 2px solid white;
+}
+
+body {
+    background-color: #1e212d;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 600px;
+    display:block;
+}
+
+#Episodes > img {
+    height: 70px;
+    margin: auto;
+}
+
+
+
+#tvShowName {
+    background-color: #e6ebff;
+    font-size: 20px;
+    height: 40px;
+    top: 60px;
+    border-radius: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+}
+
+
+.episodes-center, #episodesView {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat( auto-fit, minmax(250px, auto) );
+    justify-content: center;
+}
+
+.seasons-center { 
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat( auto-fit, minmax(180px, auto) );
+    justify-content: center;
+}
+
+#seasonsList, #Episodes.center {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;*/
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+.addBtn {
+    background-color: #e6ebff;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.addBtn:hover {
+    background-color: #1e212d;
+    color: white;
+}
+
+span {
+    display: table;
+    margin: 0 auto;
+}
+div:focus {
+    background-color: antiquewhite;
+    border: 2px solid red;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: 20px;
+    color: #1e212d;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding: 20px;
+    float: left;
+    max-inline-size: 200px;
+    background-color: #c0c9ed;
+    height: 250px;
+    width: 170px;
+    background: radial-gradient(white, #c0c9ed);
+    box-shadow: 2px 2px 5px white;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background: rgb(30,33,45);
+    background: linear-gradient(234deg, rgba(30,33,45,1) 0%, rgba(141,155,214,1) 50%, rgba(235,200,240,1) 100%);
+}
+
+.cardSelected {
+    background: rgb(30,33,45);
+    background: radial-gradient(circle, rgba(30,33,45,1) 0%, rgba(141,155,214,1) 65%, rgba(235,200,240,1) 100%);
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: 0.85vw;
+    color: #1e212d;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding: 20px;
+    float: left;
+    max-width: 250px;
+    width: 500px; 
+    background-color: #c0c9ed;
+    box-shadow: 2px 2px 5px white;
+}
+
+.card2:hover {
+    background: rgb(30,33,45);
+    background: linear-gradient(234deg, rgba(30,33,45,1) 0%, rgba(141,155,214,1) 50%, rgba(235,200,240,1) 100%);
+}
+
+h4 {
+    font-family: Tahoma;
+}
+
+card > img, .movieImg{
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 90% ;
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+}
+#imgInCard {
+    border-radius: 5px;
+}
+
+.imgCard {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+td {
+    width: 500px;
+}
+
+#series {
+    display: block;
+    margin: 0 auto;
+    background-color: #e6ebff;
+    font-size: 25px;
+    height: 30px;
+    width: 200px;
+    top: 10px;
+}
+
+
+#title {
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    font-family: Fantasy;
+    margin-bottom: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+#loginBtn {
+    display: flex;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 12%;
+    opacity: 0.9;
+    
+}
+#exitSignUp {
+    background-color: #e02b2b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+exitSignUn {
+    background-color: #f44336;
+}
+button: hover {
+    opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 100%;
+}
+
+.container {
+    padding: 16px;
+    width: 65%;
+}
+/* Add padding to container elements */
+.signUpcontainer {
+    padding: 16px;
+    width: 100%;
+    background-image: url('../images/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: #474e5d;*/
+    padding-top: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #1e212d;
+    /*background-color: red;*/
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    /*background-image: url('../images/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    width:90%;
+    left:200px;
+    display:none;
+  
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #f44336;
+        cursor: pointer;
+    }
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+
+#submitBTN:hover{
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #88dc6c;
+    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.3), 0 0 1.2em rgba(255, 255, 255, 0.5);
+}
+
+#exitSignUp:hover {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #e12d2d;
+    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.3), 0 0 1.2em rgba(255, 255, 255, 0.5);
+}
+
+form{
+   color: white; 
+   font-family:Tahoma;
+   font-size:20px;
+}
+
+select, #yearOfBirthTB {
+    height: 30px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+label, h1, #signUpTitle {
+    color: white;
+    color: #1e212d;
+}
+h1 {
+    font-family: Fantasy;
+}
+p{
+    font-family:Tahoma;
+}
+#episodeOverView {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 20px; /* fallback */
+    max-height: 160px; /* fallback */
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    font-family:Tahoma;
+    font-size:16px;
+}
+.episodeTitle {
+    font-size: 20px;
+    margin: 5px auto;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.episodeBlock {
+    font-family: Tahoma;
+    text-align: center;
+    font-size:17px;
+}
+
+.episodeBlock > #episodeOverView {
+    text-align: left;
+}
+
+#home_page {
+    background-color: #e6ebff;
+    color: black;
+    border: 2px solid black;
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    left: 8px;
+    width: 70px;
+    height: 40px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+#home_page:hover {
+    background-color: #1e212d;
+    color: white;
+    border: 2px solid white;
+}
+
+#signUp.toblack, #login.toblack, #exit.toblack {
+    color: black;
+    font-size: 15px;
+}
+
+
+#signUp.toblack:hover, #login.toblack:hover, #exit.toblack:hover {
+    color: white;
+}
+
+
+#usersTable, table.dataTable thead th, table.dataTable thead td {
+    color: black;
+    background-color: #b3c0f2;
+}
+
+#ph>#starsPopularity{
+    height: 40px;
+    width: 200px;
+}
+
+#search_input, #genreTB, #gender {
+    color: black;
+    margin-top: 10px;
+}
+#aboutBtn {
+    font-size: 16px;
+    height: 30px;
+    left: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #e6ebff;
+    color: black;
+    border: 2px solid black;
+}
+    #aboutBtn:hover {
+        background-color: #1e212d;
+        color: white;
+        border: 2px solid white;
+    }
+    .deleteEpisodeBtn {
+        font-size: 16px;
+        height: 30px;
+        float: left;
+    }
+.deleteEpisodeBtn:hover{
+   color:red;
+
+}
+#pForm{
+/*    position:relative;
+*/    height:900px;
+    width:1000px;
+}
+
+/*.form-group > input {
+    
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    float: none !important;
+}*/
+    .form-group > label{
+        font-size:14px;
+
+    }
+    .form-control {
+        position: static; /*padding: 15px;*/
+        width: 100%;
+       
+    }
+.form-group {
+    margin:0;
+}
+#signUpTitle, #signUp {
+    text-align: center;
+/*    margin-left:40%
+*/}
+
+#notRegistered{
+    text-align:center;
+    margin-top: 20px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#submitBTN {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}

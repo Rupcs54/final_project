@@ -1,0 +1,65 @@
+﻿
+
+@import url('navbarStyle.css');
+.navbar {
+    border: 1px solid #ccc;
+    background-color: #b3c0f2;
+    opacity:0.8;
+    /*background-image: url('../images/cool-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.navbar-nav {
+    color: black;
+}
+
+
+.navbar-toggle .icon-bar {
+    background-color: #333;
+}
+
+.navbar-nav > li {
+    line-height: 50px;
+    position: relative;
+    color: black;
+}
+
+.logo,
+.navbar-nav > li > .btn {
+    margin: 0 15px;
+}
+
+@media (min-width: 767px) {
+    .navbar-search-form {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 8px 0;
+    }
+}
+
+/*#navbar {
+    background-color: #eac8af;
+    position: sticky;
+    height: 27px;
+    width: 100%;
+    text-align: right;
+}*/
+
+.navbar-nav > li > a.toblack {
+    color: black;
+    font-size: 15px;
+}
+
+#userName {
+    color: #1e212d;
+    font-size: 18px;
+}
+
+.navbar navbar-inverse{
+    margin-top:0px;
+}

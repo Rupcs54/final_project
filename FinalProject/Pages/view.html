@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+    <!--** Remember to add the database script *-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <!--Your web app's Firebase configuration-->
+    <script src="../Scripts/config.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .wrapper {
+            color: white;
+            position: absolute;
+            top: 12%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+        }
+
+        .wrapper > a {
+            display: block;
+            font-size: 24px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: white;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            padding: 10px;
+            letter-spacing: 2px;
+            transition: all .25s;
+        }
+
+        .wrapper > a:hover {
+            letter-spacing: 15px;
+        }
+    </style>
+    <script src="../Scripts/navbarFunc.js"></script>
+    <script src="../Scripts/view.js"></script>
+</head>
+<body>
+    <div id="nav-bar"></div>
+    <div id="myheader">
+        <div id="forum"></div>
+        <div id="title">My Series</div>
+    </div>
+    <div id="phView">
+        <select id="series" onchange='showEpisodes(this)'></select>
+    </div>
+    <table id="episodesView"></table>
+</body>
+</html>

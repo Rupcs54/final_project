@@ -1,0 +1,413 @@
+﻿
+.title {
+    background-color: #b3c0f2;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #1e212d;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    right: 45px;
+}
+
+#poster {
+    float: left;
+    z-index: 2;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+
+#poster > img {
+    margin-top: 20px;
+    height: 470px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+#tvTitle {
+    font-family: sans-serif;
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+#overview {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+}
+
+#trailer img {
+    max-width: 150px;
+    position: absolute;
+    z-index: 2;
+}
+
+.row {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.actors-row {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /*justify-content: center;*/
+}
+
+.actor-card {
+    max-width: 110px;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.4s;
+    color: white;
+    border-radius: 25px;
+    margin: 2px;
+    text-align: center;
+}
+    .actor-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background: rgb(30,33,45);
+        background: linear-gradient(234deg, rgba(30,33,45,1) 0%, rgba(141,155,214,1) 50%, rgba(235,200,240,1) 100%);
+    }
+
+.actor-card > img {
+    margin-bottom: .75rem;
+    max-height: 110px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.actor-card-text {
+    font-size: 15px;
+    color: white;
+}
+
+#backgroundPorter {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(7.84%, 8.24%, 11.76%, 1.00) 150px, rgba(7.84%, 8.24%, 11.76%, 0.84) 100%);
+}
+
+#backgroundPorter > img {
+    width: 100%;
+    height: 650px;
+    mask-image: linear-gradient(to right, rgba(7.84%, 8.24%, 11.76%, 1.00) 150px, rgba(7.84%, 8.24%, 11.76%, 0.84) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+}
+
+#actor > h3{
+    background-color: #b3c0f2;
+}
+
+
+#poster > .starsPopularity {
+    height: 40px;
+    width: 200px;
+}
+
+.recommand-card > .starsPopularity {
+    height: 20px;
+    width: 100px;
+}
+
+.recommand-card {/*, .rev-card*/
+    max-width: 150px;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: 33.333%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    transition: 0.3s;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+
+    .recommand-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        background: rgb(30,33,45);
+        background: linear-gradient(234deg, rgba(30,33,45,1) 0%, rgba(141,155,214,1) 50%, rgba(235,200,240,1) 100%);
+    }
+
+.recommand-card > img {/*rev-card >img*/
+    border-radius: 25px;
+    width: 100%;
+}
+
+.container{
+    /*display:block;
+    width:70%;*/
+    /*overflow-x: scroll;*/
+}
+
+
+/*Reveiws STYLE*/
+.authorImg {
+    height: 200px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-secondary{
+    text-align: center;
+}
+
+/*caroucele style*//*caroucele style*//*caroucele style*//*caroucele style*//*caroucele style*//*caroucele style*/
+/* no circle */
+.flickity-button {
+    background: transparent;
+}
+
+    .flickity-button:hover {
+        background: transparent;
+        color: black;
+    }
+
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+
+.flickity-button-icon {
+    fill: white;
+}
+
+.flickity-button:disabled {
+    display: none;
+}
+
+.carousel {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 100%;
+    height: 400px;
+    border-radius: 20%;
+}
+
+.carousel-cell {
+    margin-top: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    float: right;
+    max-width: 300px;
+    width: 100%;
+    height: 335px;
+    border-radius: 15px;
+    counter-increment: carousel-cell;
+    transition: all .3s ease;
+    opacity: 0.3;
+    background: #b9b9b9;
+    filter: blur(6px);
+}
+
+.carousel-cell.is-selected {
+    filter: blur(0);
+    opacity: 1;
+    background: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* name */
+.carousel-cell .n {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 22px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    counter-increment: carousel-cell;
+}
+
+/* button */
+.carousel-cell .b {
+    cursor: pointer;
+    margin: auto;
+    width: 180px;
+    padding: 1px;
+    background: green;
+    border: 1px solid green;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    counter-increment: carousel-cell;
+    transition: all .3s ease;
+}
+
+/* picture */
+.carousel-cell .review-avatar {
+    display: flex;
+    flex-direction: row;
+}
+.carousel-cell .p {
+    border-radius: 50%;
+    margin: 15px;
+    width: 50px;
+    height: 70px;
+}
+.carousel-cell .content {
+    border-radius: 15px;
+    padding: 10px;
+    width: 300px;
+    height: 180px;
+    overflow-y: auto;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell .b:hover {
+    background: #00e509;
+    transform: scale(1.03);
+    font-size: 16px;
+}
+
+.carousel-cell .b:active {
+    background: white;
+    color: green;
+    transform: scale(0.9);
+    font-size: 16px;
+}
+
+.carousel-cell .b-selected {
+    cursor: pointer;
+    margin: auto;
+    width: 180px;
+    padding: 1px;
+    background: white;
+    border: 1px solid green;
+    border-radius: 15px;
+    font-size: 15px;
+    color: green;
+    text-align: center;
+    counter-increment: carousel-cell;
+    transition: all .3s ease;
+}
+/*caroucele style*/ /*caroucele style*/ /*caroucele style*/ /*caroucele style*/ /*caroucele style*/ /*caroucele style*/
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+media media-chat media-chat-reverse .media-body > .avatarChat {
+    height: 46px;
+    width: 43px;
+    display: flex;
+    justify-content: right;
+    border-radius: 25px;
+}
+
+/*#recommendations ::-webkit-scrollbar-button {
+    background-color: #bbbbbb;
+    display: block;
+    border-style: solid;
+    height: 13px;
+    width: 16px;
+}*/
+
+/*.row::-webkit-scrollbar-button {
+    background-size: 100%;
+    height: 10px;
+    width: 10px;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}*/
+
+    /*.row::-webkit-scrollbar-button:horizontal:increment {
+        background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon2.png);
+    }
+
+    .row::-webkit-scrollbar-button:horizontal:decrement {
+        background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon4.png);
+    }
+
+    .row::-webkit-scrollbar-button:vertical:increment {
+        background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon3.png);
+    }
+
+    .row::-webkit-scrollbar-button:vertical:decrement {
+        background-image: url(https://dl.dropboxusercontent.com/u/55165267/icon.png);
+    }*/
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    font-size: 40px;
+    color: white;
+}
+
+#name {
+    color: whitesmoke;
+    margin-left: 55px;
+}

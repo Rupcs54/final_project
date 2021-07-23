@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="../Scripts/searchTv.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#nav-bar").load("signup.html");
+        });
+    </script>
+    <link href="myStyle.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="nav-bar"></div>
+    <div class="header">
+        <input type="text" id="tvShowName" placeholder="I want to watch..." />
+        <button id="getTV">Get TV Show</button>
+        <div>
+            <div id="ph"></div>
+            <div id="actors"></div>
+        </div>
+    </div>
+
+    <div id="seasonsList" class="seasons-center"></div>
+    <br />
+    <div class="episodes-center" id="Episodes"></div>
+</body>
+</html>

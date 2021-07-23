@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+    </script>-->
+
+
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCCwWKnfacKHx3AVajstMk6Ist1VUoNt9w"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- data table-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <!--  -->
+    <link href="navbarStyle.css" rel="stylesheet" />
+    <script src="../Scripts/navbarFunc.js"></script>
+    <script src="../Scripts/signUp.js"></script>
+    <link href="myStyle.css" rel="stylesheet" />
+
+    <!--//firebase-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>-->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="../Scripts/config.js"></script>-->
+
+    <script>
+        $(document).ready(function () {
+            navBarVisability();
+        });
+    </script>
+    <!-- Owl carousel -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <!--  -->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> The Movie H & H</a>
+            </div>
+            <ul class="nav navbar-nav justify-content-between">
+                <li><div id="profile"></div></li>
+                <li><div id="userName"></div></li>
+                <li><a class="toblack" href="homePage.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a class="toblack" href="searchTV.html"><span class="glyphicon glyphicon-search"></span> Search TvShow</a></li>
+                <li><a class="toblack" href="movie.html"><span class="glyphicon glyphicon-search"></span> Search Movie</a></li>
+                <li><a class="toblack" id="view" href="view.html"><span class="glyphicon glyphicon-heart-empty"></span> View</a></li><!--"glyphicon glyphicon-eye-open"-->
+                <li><a class="toblack" id="admin" href="admin.html"><span class="glyphicon glyphicon-user"></span> Admin</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a onclick="signUpClick()" id="signUp" class="toblack"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a id="login" href="login.html" class="toblack"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                <li><a href="editUser.html" id="editUser" class="toblack"><span class="glyphicon glyphicon-pencil"></span>  Edit Profile</a></li>
+                <li><a onclick="exitFunc()" id="exit" class="toblack"><span class="glyphicon glyphicon-log-in"></span>  Exit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="modalBox" class="modal">
+        <span onclick="document.getElementById('modalBox').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form id="pForm" class="modal-content">
+            <div class="signUpcontainer">
+                <h1 id="signUp">Sign Up</h1>
+                <p id="signUpTitle">Please fill in this form to create an account</p>
+                <hr>
+                <div class="form-group">
+                    <label for="fnameTB">First Name</label>
+                    <input type="text" class="form-control" id="fnameTB" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lnameTB">Last Name</label>
+                    <input type="text" class="form-control" id="lnameTB" placeholder="Enter your last name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailTB"> email</label>
+                    <input type="text" class="form-control" placeholder="Enter the email" id="emailTB"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                           oninvalid="this.setCustomValidity('Invalid mail format')"
+                           oninput="this.setCustomValidity('')" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="passwordTB">password</label>
+                    <input type="password" class="form-control" placeholder="Enter the password" id="passwordTB"
+                           pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$"
+                           oninvalid="this.setCustomValidity('Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters')"
+                           oninput="this.setCustomValidity('')" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneTB">phone</label>
+                    <input type="text" class="form-control" placeholder="Enter your phone number" id="phoneTB"
+                           pattern="^[0][5][0|2|3|4|5|9]{1}[-]{0,1}[0-9]{7}$"
+                           oninvalid="this.setCustomValidity('0dd-ddddddd')"
+                           oninput="this.setCustomValidity('')" required />
+                </div>
+                <div class="form-group">
+                    <label for="gender"> select your gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="other">Other</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="yearOfBirthTB">year of birth</label>
+                    <input type="number" class="form-control" id="yearOfBirthTB" placeholder="Enter your year of birth" min="1920" max="2020" required />
+                </div>
+                <div class="form-group">
+                    <label for="genreTB">select genre:</label>
+                    <select id="genreTB" name="genre">
+                        <option value="select">select genre</option>
+                        <option value="Action & Adventure">Action & Adventure</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Crime">Crime</option>
+                        <option value="Documentary">Documentary</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Family">Family</option>
+                        <option value="Kids">Kids</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="News">News</option>
+                        <option value="Reality">Reality</option>
+                        <option value="Sci-Fi & Fantasy">Sci-Fi & Fantasy</option>
+                        <option value="Soap">Soap</option>
+                        <option value="Talk">Talk</option>
+                        <option value="War & Politics">War & Politics</option>
+                        <option value="Western">Western</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="search_input" placeholder="Address" required>
+                    <input type="hidden" id="loc_lat" />
+                    <input type="hidden" id="loc_long" />
+                </div>
+                <div>
+                    <input type="file" id="photo" style="margin-top: 10px;"/>
+                </div>
+
+                <div class="clearfix">
+                    <button id="submitBTN" type="submit" class="signupbtn">Sign Up</button>
+                    <button id="exitSignUp" type="button" onclick="document.getElementById('modalBox').style.display='none'" class="cancelbtn">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('modalBox');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

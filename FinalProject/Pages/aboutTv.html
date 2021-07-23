@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="../Scripts/ajaxCalls.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- For reviews: -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Chat -->
+    <link href="chatStyle.css" rel="stylesheet" />
+    <link href="aboutStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <!-- caroucele sources -->
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- caroucele sources -->
+
+    <link href="StyleSheetModalactor.css" rel="stylesheet" />
+
+    <!-- Links For Chat -->
+    <!--**** Remember to add the database script ***-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+    <!--** Remember to add the database script *-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+    <!--Your web app's Firebase configuration-->
+    <script src="../Scripts/config.js"></script>
+
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--  -->
+
+    <meta charset="utf-8" />
+    <title>About</title>
+</head>
+<body>
+    <div class="header">
+        <!--<div id="nav-bar"></div>-->
+        <div class="container-fluid" id="backgroundPorter">
+            <div class="left" id="poster"></div>
+            <div class="right">
+                <h3 id="tvTitle"></h3>
+                <p id="overview"></p>
+                <div id="trailer"></div>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div id="mediaLinks" class="wrapper"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="floating-chat" id="floatingChat">
+        <i class="fa" aria-hidden="true">&#xf0e6;</i>
+        <div class="chat">
+            <div class="header">
+                <span class="chatTitle">
+                    What's on your mind?
+                </span>
+                <button>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <!-- Chat: -->
+            <div class="page-content page-container" id="page-content">
+                <div class="container d-flex justify-content-center">
+                    <div class="col-md-9">
+                        <div class="chatCard chatCard-bordered">
+                            <div class="ps-container ps-theme-default ps-active-y" id="chat-content" style="overflow-y: scroll !important; height:400px !important; display: flex; flex-direction: column-reverse;">
+                                <div id="chat"></div>
+                                <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+                                    <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                                </div>
+                                <div id="gotcha" class="ps-scrollbar-y-rail" style="top: 0px; height: 0px; right: 2px;">
+                                    <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 2px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div id="msgTB" class="text-box" contenteditable="true" disabled="true"></div>
+                <button id="sendMessage" onclick="addMSG()">send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- //////////////////////////////////////////// Tabs ////////////////////////////////////////////////// -->
+    <div class="tab">
+        <button class="tablinks" tabindex="1" onclick="location.href = 'homePage.html'">Home Page</button>
+        <button class="tablinks" tabindex="2" onclick="location.href = 'searchTv.html'">Seasons and Episodes</button>
+        <button class="tablinks" tabindex="3" onclick="openTab(event, 'Actors')">Actors</button>
+        <button class="tablinks" tabindex="4" onclick="openTab(event, 'Recommendations')">Recommendations</button>
+        <button class="tablinks" tabindex="5" onclick="openTab(event, 'Similar')">Similar</button>
+        <button class="tablinks" tabindex="6" onclick="openTab(event, 'Reviews'); window.dispatchEvent(new Event('resize'));">Reviews</button>
+    </div>
+
+    <div id="Actors" class="tabcontent">
+        <div class='title'><a>Actors</a></div>
+        <div id="actors">
+        </div>
+        <!-- Modal content -->
+        <div id="myModal" class="modal">
+            <div id="actorAbout" class="modal-content">
+                <span class="close">&times;</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="Recommendations" class="tabcontent">
+        <div class='title'><a>Recommendations</a></div>
+        <div id="recommendations"></div>
+    </div>
+
+    <div id="Similar" class="tabcontent">
+        <div class='title'><a>Similar TV Shows</a></div>
+        <div id="similars"></div>
+    </div>
+
+    <div id="Reviews" class="tabcontent">
+        <div class='title'><a>Reviews</a></div>
+        <div id="reviews"></div>
+    </div>
+    <link href="links.css" rel="stylesheet" />
+    <div id="Links" class="tabcontent">
+        <div class='title'><a>Links</a></div>
+        <div id="links"> </div>
+    </div>
+
+    <script src="../Scripts/liveChat.js"></script>
+</body>
+</html>
+<script src="../Scripts/aboutTv.js"></script>
+<!--<script type="text/javascript" src="/Scripts/owl-carousel-script.min.js"></script>-->

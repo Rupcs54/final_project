@@ -1,0 +1,121 @@
+﻿#btnDataTable{
+    margin: 5px; 
+}
+.delete {
+    background-color: #ec4040;
+    border: 1px solid #ec4040;
+}
+.delete:hover {
+    background-color: red;
+    border: 1px solid red;
+}
+#ph {
+    height: 30%;
+    /*text-align:center;*/
+}
+td {
+    border: 1px dashed grey;
+}
+th {
+    /*text-align: center;*/
+}
+td > img {
+    display: block;
+    margin:auto;
+    text-align: center;
+  
+}
+#ph {
+    padding: 10px;
+}
+.paginate_button :hover
+{
+     background-color:aliceblue;
+}
+td > p > .overview{
+    text-align:left;
+    direction:ltr;
+}
+
+
+
+
+.btn-group {
+    /*margin-top: 100px;*/
+    display: flex; /* Make the buttons appear below each other */
+    justify-content: center;
+}
+
+    .btn-group button {
+        background-color: #b3c0f2; /* Green background */
+        border: 1px solid #1e212d; /* Green border */
+        /*color: white;*/ /* White text */
+        padding: 15px 24px; /* Some padding */
+        cursor: pointer; /* Pointer/hand icon */
+        width: 100%; /* Set a width if needed */
+        font-weight: bold;
+       /* margin-top: 10px;*/
+    }
+
+    .btn-group button:not(:last-child) {
+        border-bottom: none; /* Prevent double borders */
+    }
+
+    /* Add a background color on hover */
+        .btn-group button:hover {
+            background-color: #565e7d;
+            color: white;
+        }
+.rowDivs {
+    display: flex; /* Make the buttons appear below each other */
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom:90px;
+}
+    .rowDivs > div {
+        height: 150px;
+        width: 300px;
+        border-radius: 10px;
+        opacity: 0.8;
+        float: left;
+        margin-left: 120px;
+        border:2px solid white;
+    }
+#greenDiv:hover,
+#greenDiv:focus,
+#blueDiv:hover,
+#blueDiv:focus,
+#redDiv:hover,
+#redDiv:focus {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 7px 10px 5px #C7C7C7;
+    /*  box-shadow: 0 0.9em 0.9em -0.9em var(--hover);
+    transform: translateY(-3em);*/
+    /*    transform: translateY(-5px);*/
+}
+        #greenDiv {
+            /* background-color: purple;*/
+            background: linear-gradient(to right, #01a9ac, #01dbdf);
+        }
+
+#redDiv {
+    background: linear-gradient(to right, #fe5d70, #fe5d70, #fe909d,#ff919e);
+}
+
+
+#blueDiv {
+    background: linear-gradient(to right, #fe9365, #feb798);
+}
+.MostViewed {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.row {
+    width:100%;
+}
+ 

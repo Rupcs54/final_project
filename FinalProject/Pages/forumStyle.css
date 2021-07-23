@@ -1,0 +1,256 @@
+﻿body {
+    background: rgb(30,33,45);
+    background: radial-gradient(circle, rgba(30,33,45,0.9612219887955182) 49%, rgba(40,46,61,0.87718837535014) 100%);
+}
+#forumTitle {
+    font-size: 25px;
+    font-family: 'Microsoft Sans Serif';
+    font-weight:bold;
+}
+.be-comment-block {
+    margin-bottom: 50px !important;
+    border: 1px solid #edeff2;
+    border-radius: 2px;
+    padding: 50px 70px;
+    border: 1px solid #ffffff;
+}
+
+.comments-title {
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 15px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-img-comment {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.be-ava-comment {
+    width: 39px;
+    height: 46px;
+    border-radius: 50%;
+    margin-left: 23px;
+    margin-top: 10px;
+}
+
+.be-comment-content {
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.be-comment-content span {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.be-comment-name {
+    font-size: 13px;
+    font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-comment-content a {
+    color: #383b43;
+}
+
+.be-comment-content span {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 15px;
+    margin-bottom: 0px;
+/*    color: #b4b7c1;
+*/}
+
+.be-comment-time {
+    text-align: right;
+}
+
+.be-comment-time {
+    font-size: 11px;
+    /*color: #b4b7c1;*/
+    color:black;
+}
+
+.be-comment-text {
+    font-size: 16px;
+    line-height: 4px;
+    color: #7a8192;
+    display: block;
+    background: #f6f6f7;
+    border: 1px solid #edeff2;
+    padding: 15px 15px 15px 17px;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+.form-group.fl_icon .icon {
+    position: absolute;
+    top: 1px;
+    left: 16px;
+    width: 48px;
+    height: 48px;
+    background: #f6f6f7;
+    color: #b5b8c2;
+    text-align: center;
+    line-height: 50px;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.form-group .form-input {
+    font-size: 13px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #b4b7c1;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #edeff2;
+    border-radius: 3px;
+}
+
+.form-group.fl_icon .form-input {
+    padding-left: 70px;
+}
+
+.form-group textarea.form-input {
+    height: 150px;
+}
+
+#subComment{
+    margin-left:20px;
+}
+
+.replyBtn {
+    background-color: transparent;
+    border: 0px;
+}
+
+.replyModal {
+    background-color: transparent;
+    border: 1px solid black;
+    height: 7vw;
+    width: 20vw;
+    resize: none;
+}
+
+#modalBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contentText {
+    float: left;
+    width: 80%;
+    display: inline-block;
+    margin-left: 5%;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 80px;
+}
+
+#submit {
+    display: inline-block;
+    height: 100%;
+    /*float: right;*/
+    margin-right: 5%;
+    height: 80px;
+}
+
+#sendMsgRow {
+    height: 156px;
+    display: flex;
+}
+
+
+#forum {
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+
+#forumTitle {
+    color: black;
+    font-family: Jazz LET;
+    font-size: 50px;
+    font-weight:bolder;
+    line-height: 60px;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000, margin: 10px 0 24px;
+    text-align: center;
+}
+
+input .replay{
+    border:1px solid black;
+}
+body {
+    margin: 0;
+    
+}
+#forum {
+    background-color: #b3c0f2;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}

@@ -80,6 +80,7 @@ StyleCopReport.xml
 *_wpftmp.csproj
 *.log
 *.vspscc
+*.config
 *.vssscc
 .builds
 *.pidb

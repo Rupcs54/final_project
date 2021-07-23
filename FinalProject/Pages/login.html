@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title></title>
+    <link href="myStyle.css" rel="stylesheet" />
+    <link href="navbarStyle.css" rel="stylesheet" />
+    <link href="login_style_sheet.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- fireBase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <!--https://firebase.google.com/docs/web/setup#available-libraries-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="../Scripts/config.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="../Scripts/login.js"></script>
+    <!--<script src="../Scripts/navbarFunc.js"></script>-->
+
+</head>
+<body>
+    <div id="test-nav"></div>
+    <div class="container">
+        <form id="pForm">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="emailTB"><span class="red-star"></span> Email </label>
+                <input type="text" class="form-control" placeholder="Enter the email" id="email"
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                       oninvalid="this.setCustomValidity('Format should be with @')"
+                       oninput="this.setCustomValidity('')" required />
+            </div>
+            <div class="form-group">
+                <label for="passwordTB"><span class="red-star"></span> Password</label>
+                <input type="password" class="form-control" placeholder="Enter the password" id="password"
+                       pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$"
+                       oninvalid="this.setCustomValidity('Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters')"
+                       oninput="this.setCustomValidity('')" required />
+            </div>
+            <input id="loginBtn" type="submit" value="Submit " />
+            <div id="notRegistered">
+                If you are not registered <a onclick="signUpClick()">click here</a>
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+</html>
+<!-- fireBase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>-->
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!--<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+<script src="../Scripts/config.js"></script>-->
